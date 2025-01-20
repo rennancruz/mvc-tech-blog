@@ -1,0 +1,21 @@
+<div class="container">
+  <h1 class="text-center my-4">Welcome to DevConnect</h1>
+  {{#if posts}}
+    <div class="row">
+      {{#each posts}}
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{title}}</h5>
+              <p class="card-text">{{format_snippet content 150}}</p>
+              <p class="text-muted">By {{user.username}} on {{format_date createdAt}}</p>
+              <a href="/post/{{id}}" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  {{else}}
+    <p>No posts yet. Be the first to share your thoughts!</p>
+  {{/if}}
+</div>
