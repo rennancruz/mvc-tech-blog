@@ -1,0 +1,22 @@
+[
+    {
+      "username": "TechGuru",
+      "email": "techguru@devconnect.com",
+      "password": "password123"
+    },
+    {
+      "username": "CodeMaster",
+      "email": "codemaster@devconnect.com",
+      "password": "password456"
+    },
+    {
+      "username": "Innovator",
+      "email": "innovator@devconnect.com",
+      "password": "password789"
+    },
+    {
+      "username": "Builder",
+      "email": "builder@devconnect.com",
+      "password": "builderpass"
+    }
+  ]

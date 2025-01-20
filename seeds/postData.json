@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Breaking Down the Latest JavaScript Features",
+        "content": "In this post, we explore the latest JavaScript updates, their use cases, and best practices.",
+        "user_id": 1
+    },
+    {
+        "title": "DevOps Simplified",
+        "content": "An overview of how DevOps streamlines the software development lifecycle and key tools to get started.",
+        "user_id": 2
+    },
+    {
+        "title": "The Future of AI in Tech",
+        "content": "A deep dive into AI's potential impact on the tech industry over the next decade.",
+        "user_id": 3
+    },
+    {
+        "title": "Web Performance Optimization",
+        "content": "Tips and tricks to enhance your website's speed and deliver a better user experience.",
+        "user_id": 4
+    }
+]
