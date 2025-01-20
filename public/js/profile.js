@@ -23,7 +23,7 @@ document.querySelector('.new-post-form').addEventListener('submit', async (event
     }
 });
   
-  document.querySelector('.post-list').addEventListener('click', async (event) => {
+document.querySelector('.post-list').addEventListener('click', async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
   
