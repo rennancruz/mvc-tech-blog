@@ -5,17 +5,17 @@ require('dotenv').config();
 const sequelize = process.env.DB_URL
   ? new Sequelize(process.env.DB_URL, {
       dialect: 'postgres',
-      logging: false, // Disable SQL logging in production
+      logging: false,
     })
   : new Sequelize(
       process.env.DB_NAME,
       process.env.DB_USER,
       process.env.DB_PASSWORD,
       {
-        host: process.env.DB_HOST || 'localhost', // Support configurable host
-        port: process.env.DB_PORT || 5432, // Support configurable port
+        host: process.env.DB_HOST || 'localhost',
+        port: process.env.DB_PORT || 5432,
         dialect: 'postgres',
-        logging: false, // Disable SQL logging in production
+        logging: false,
       }
     );
 
