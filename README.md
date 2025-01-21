@@ -9,6 +9,11 @@ DevConnect is a CMS-style blog application where developers can share posts and 
 - View and comment on other users' posts
 - Responsive and intuitive UI with **Bootstrap**
 
+## Demo
+https://github.com/user-attachments/assets/9804d428-ca4c-4004-ac22-18764d3f91db
+
+
+
 ## Technologies Used
 - **Backend**: Node.js, Express.js
 - **Frontend**: Handlebars.js, Bootstrap
