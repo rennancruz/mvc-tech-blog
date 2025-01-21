@@ -27,14 +27,14 @@ router.delete('/:id', withAuth, async (req, res) => {
     });
 
     if (!postData) {
-      res.status(404).json({ message: 'No post found with this ID or unauthorized action' });
+      res.status(404).json({ message: 'No post found with this ID or unauthorized action.' });
       return;
     }
 
-    res.status(200).json({ message: 'Post deleted successfully' });
+    res.status(200).json({ message: 'Post deleted successfully.' });
   } catch (err) {
     console.error(err);
-    res.status(500).json({ message: 'Failed to delete post', error: err.message });
+    res.status(500).json({ message: 'Failed to delete post.', error: err.message });
   }
 });
 

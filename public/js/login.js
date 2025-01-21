@@ -21,9 +21,9 @@ document.querySelector('.login-form').addEventListener('submit', async (event) =
         console.error('Error during login:', error);
       }
     }
-  });
+});
   
-  document.querySelector('.signup-form').addEventListener('submit', async (event) => {
+document.querySelector('.signup-form').addEventListener('submit', async (event) => {
     event.preventDefault();
   
     const username = document.querySelector('#username-signup').value.trim();
@@ -31,6 +31,10 @@ document.querySelector('.login-form').addEventListener('submit', async (event) =
     const password = document.querySelector('#password-signup').value.trim();
   
     if (username && email && password) {
+      if (password.length < 8) {
+        alert('Password must be at least 8 characters long.');
+        return;
+      }
       try {
         const response = await fetch('/api/users', {
           method: 'POST',
@@ -46,6 +50,7 @@ document.querySelector('.login-form').addEventListener('submit', async (event) =
       } catch (error) {
         console.error('Error during signup:', error);
       }
+    } else {
+      alert('Please fill out all fields before submitting.');
     }
 });
-  
